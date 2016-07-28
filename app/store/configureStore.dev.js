@@ -23,14 +23,10 @@ export default function (initialState) {
 
   if (module.hot) {
     module.hot.accept('../reducers', () =>
-      store.replaceReducer(
-        require('../reducers').default
-      )
+      store.replaceReducer(rootReducer)
     )
     module.hot.accept('../epics', () =>
-      epic.replaceEpic(
-        require('../epics').default
-      )
+      epic.replaceEpic(rootEpic)
     )
   }
   return store
