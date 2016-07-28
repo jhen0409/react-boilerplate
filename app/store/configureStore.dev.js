@@ -14,7 +14,7 @@ const enhancer = compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f
 )
 
-export default function (initialState) {
+export default initialState => {
   const store = createStore(rootReducer, initialState, enhancer)
 
   if (window.devToolsExtension) {

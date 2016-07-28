@@ -28,9 +28,13 @@ export default class Counter extends Component {
         {' '}
         <button onClick={decrement}>-</button>
         {' '}
-        <button onClick={this.incrementAsync}>Increment async</button>
+        <button onClick={this.incrementAsync}>
+          Increment async
+        </button>
         {counter.isCounting &&
-          <button onClick={incrementAsyncCancel}>Cancel increment async</button>
+          <button onClick={incrementAsyncCancel}>
+            Cancel increment async
+          </button>
         }
       </div>
     )

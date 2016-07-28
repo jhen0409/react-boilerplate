@@ -12,6 +12,5 @@ const enhancer = compose(
   applyMiddleware(router, epic)
 )
 
-export default function (initialState) {
-  return createStore(rootReducer, initialState, enhancer)
-}
+export default initialState =>
+  createStore(rootReducer, initialState, enhancer)
