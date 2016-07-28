@@ -1,0 +1,90 @@
+{
+  "name": "react-boilerplate",
+  "private": true,
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "lint": "eslint app test *.js",
+    "test": "mocha test/app/**/*.spec.js",
+    "test-e2e": "mocha test/e2e/*.spec.js",
+    "start": "webpack-dev-server --config webpack.dev.babel.js --hot --inline",
+    "build": "NODE_ENV=production webpack --config webpack.prod.babel.js"
+  },
+  "author": "Jhen <developer@jhen.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015-native-modules": "^6.9.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-react-optimize": "^1.0.1",
+    "babel-preset-stage-1": "^6.5.0",
+    "chromedriver": "jhen0409/node-chromedriver",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.11.1",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
+    "expect": "^1.20.2",
+    "mocha": "^2.5.3",
+    "react-hot-loader": "^3.0.0-beta.2",
+    "redux-mock-store": "^1.1.2",
+    "webdriverio": "^4.2.3",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  },
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.0",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-observable": "^0.8.0",
+    "rxjs": "^5.0.0-beta.10"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-1",
+      "react"
+    ],
+    "plugins": [
+      [
+        "transform-runtime",
+        {
+          "helpers": false,
+          "polyfill": false,
+          "regenerator": true
+        }
+      ]
+    ],
+    "env": {
+      "development": {
+        "plugins": [
+          "react-hot-loader/babel"
+        ]
+      },
+      "production": {
+        "presets": [
+          "react-optimize"
+        ]
+      }
+    }
+  }
+}
