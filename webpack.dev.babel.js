@@ -1,3 +1,5 @@
+/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
+
 import webpack from 'webpack'
 import baseConfig from './webpack.base.babel'
 

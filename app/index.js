@@ -1,4 +1,5 @@
 /* eslint global-require: 0 */
+/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 
 import React from 'react'
 import { render } from 'react-dom'

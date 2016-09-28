@@ -24,7 +24,7 @@ export const startHTTPServer = () => {
     return res.sendFile(path.join(__dirname, '../index.html'))
   })
   return new Promise((resolve, reject) => {
-    const server = app.listen(0, 'localhost', err => {
+    const server = app.listen(0, 'localhost', (err) => {
       if (err) return reject(err)
       serverPort = server.address().port
       return resolve(serverPort)

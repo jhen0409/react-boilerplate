@@ -1,9 +1,9 @@
+import { timer } from 'rxjs/observable/timer'
 import {
   INCREMENT_ASYNC,
   INCREMENT_ASYNC_CANCEL,
   INCREMENT_ASYNC_END,
 } from '../actions/counter'
-import { timer } from 'rxjs/observable/timer'
 
 export const incrementAsyncEpic = action$ =>
   action$.ofType(INCREMENT_ASYNC)

@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+import { goBack } from 'react-router-redux'
 import Counter from '../components/Counter'
 import * as CounterActions from '../actions/counter'
-import { goBack } from 'react-router-redux'
 
 const CounterPage = props =>
   <div>
