@@ -24,6 +24,7 @@
     "chromedriver": "jhen0409/node-chromedriver",
     "eslint": "^3.6.1",
     "eslint-config-airbnb": "^12.0.0",
+    "eslint-import-resolver-webpack": "^0.6.0",
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.3.0",
@@ -51,6 +52,13 @@
     "extends": "airbnb",
     "env": {
       "browser": true
+    },
+    "settings": {
+      "import/resolver": {
+        "webpack": {
+          "config": "webpack/dev.babel.js"
+        }
+      }
     },
     "rules": {
       "react/jsx-filename-extension": [
