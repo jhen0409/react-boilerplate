@@ -1,7 +1,5 @@
-/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
-
 import webpack from 'webpack'
-import baseConfig from './webpack.base.babel'
+import baseConfig from './base.babel'
 
 const host = 'localhost'
 const port = process.env.PORT || 3000

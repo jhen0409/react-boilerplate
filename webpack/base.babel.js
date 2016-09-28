@@ -1,5 +1,5 @@
 import path from 'path'
-import { babel as babelConfig } from './package.json'
+import { babel as babelConfig } from '../package.json'
 
 babelConfig.presets[0] = ['es2015', { modules: false }]
 babelConfig.babelrc = false
