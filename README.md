@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jhen0409/react-boilerplate.svg?branch=master)](https://travis-ci.org/jhen0409/react-boilerplate)
 [![Dependency Status](https://david-dm.org/jhen0409/react-boilerplate.svg)](https://david-dm.org/jhen0409/react-boilerplate)
-[![devDependency Status](https://david-dm.org/jhen0409/react-boilerplate/dev-status.svg)](https://david-dm.org/jhen0409/react-boilerplate#info=devDependencies)
+[![devDependency Status](https://david-dm.org/jhen0409/react-boilerplate/dev-status.svg)](https://david-dm.org/jhen0409/react-boilerplate?type=dev)
 
 > A react boilerplate with [redux](https://github.com/reactjs/redux) / [redux-observalbe](https://github.com/redux-observable/redux-observable) for personal usage
 
