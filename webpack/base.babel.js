@@ -9,7 +9,7 @@ export default {
   module: {
     loaders: [{
       test: /\.js$/,
-      loader: 'babel',
+      loader: 'babel-loader',
       include: /app/,
       query: babelConfig,
     }],
