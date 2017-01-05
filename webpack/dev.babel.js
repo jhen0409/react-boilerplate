@@ -2,7 +2,7 @@ import webpack from 'webpack'
 import baseConfig from './base.babel'
 
 const host = 'localhost'
-const port = process.env.PORT || 3000
+const port = Number(process.env.PORT) || 3000
 
 export default {
   ...baseConfig,
